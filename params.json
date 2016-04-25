@@ -1,6 +1,6 @@
 {
   "name": "学习笔记2016/04/25",
   "tagline": "技术博客",
-  "body": "# 回顾   \r\n方法参数：一句方法内部的处理逻辑至少需要几个数据     \r\n方法参数的作用：   \r\n1）接收外部传入数据在方法内处理    \r\n2）规定调用方法的人必须提供哪些参数   \r\n方法返回值：根据方法调用者的需要 如果方法调用者需要明确返回一个结果就定义返回值 否则可以不定义返回值  \r\n什么时候返回值要用变量接住?    \r\n有返回值的方法 只用一次 可以不定义变量 直接当成一个值用   \r\n如果后续还有继续使用该返回值 就要用变量接住    \r\n***\r\n全局函数 浏览器厂商已经实现 直接调用   \r\nencodeURL 将url中的非法字符转为单字节符号  编码   \r\ndecodeURL 将encodeURL转后的字符串 转换回原文  解码   \r\nencodeURLComponent 对单字节非法字符和多字节非法字符   编码   \r\ndecodeURLComponent  解码\r\n      ",
+  "body": "# 回顾   \r\n方法参数：一句方法内部的处理逻辑至少需要几个数据     \r\n方法参数的作用：   \r\n1）接收外部传入数据在方法内处理    \r\n2）规定调用方法的人必须提供哪些参数   \r\n方法返回值：根据方法调用者的需要 如果方法调用者需要明确返回一个结果就定义返回值 否则可以不定义返回值  \r\n什么时候返回值要用变量接住?    \r\n有返回值的方法 只用一次 可以不定义变量 直接当成一个值用   \r\n如果后续还有继续使用该返回值 就要用变量接住    \r\n***\r\n全局函数 浏览器厂商已经实现 直接调用   \r\nencodeURI 将url中的非法字符转为单字节符号  编码   \r\ndecodeURI 将encodeURL转后的字符串 转换回原文  解码   \r\nencodeURIComponent 对单字节非法字符和多字节非法字符   编码   \r\ndecodeURIComponent  对encodeURIComponent解码  收到编码后的字符串后都要先解码再处理\r\n\r\n将数据通过url发送时都要先编码再发送    \r\n\r\neval() 专门执行字符串格式的代码   \r\n      ",
   "note": "Don't delete this file! It's used internally to help with page regeneration."
 }
