@@ -56,11 +56,21 @@ eval（"alert("hello")");</p>
 <p>分析处理流程：<br>
 1.请用户输入：单价，数量，收款金额，保存在变量中<br>
 2.计算：<br>
-应收金额：单价*数量<br>
+应收金额：单价<em>数量<br>
 找零=收款金额 应收金额<br>
-3.输出：应收金额 找零     </p>
-
-
+3.输出：应收金额 找零<br>
+    //1.请用户输入：单价，数量，收款金额，保存在变量中<br>
+    var price = parseFloat(prompt("输入单价"));<br>
+    var count = parseInt(prompt("输入数量"));<br>
+    var money = parseFloat(prompt("请输入收款金额"));<br>
+    /</em>2.计算：<br>
+    应收金额：单价<em>数量<br>
+    找零=收款金额 应收金额 */<br>
+    var pay = price</em>count;<br>
+    var change = money-pay;<br>
+    //3.输出：应收金额 找零<br>
+    alert("应收金额"+pay.toFixed(2));<br>
+    alert("找零"+change.toFixed(2));  </p>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/yiyexianchen/javascript3">学习笔记2016/04/25-27</a> is maintained by <a href="https://github.com/yiyexianchen">yiyexianchen</a>.</span>
