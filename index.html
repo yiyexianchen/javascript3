@@ -72,6 +72,23 @@ eval（"alert("hello")");</p>
     alert("应收金额"+pay.toFixed(2));<br>
     alert("找零"+change.toFixed(2));  </p>
 
+<p>超过500元打折 有消费提示   </p>
+
+<pre><code>var price = parseFloat(prompt("输入单价"));    
+var count = parseInt(prompt("输入数量"));    
+var money = parseFloat(prompt("请输入收款金额"));    
+var pay = price*count;  
+var change;  
+if(pay&gt;=500){  
+    change = money-pay*0.8  
+    alert("您的消实际消费金额为"+pay.toFixed(2)+"满足500优惠条件，应收金额为"+pay*0.8.toFixed(2));  
+}else{  
+    change = money-pay;  
+    alert("应收金额"+pay.toFixed(2));  
+};  
+alert("找零"+change.toFixed(2));  
+</code></pre>
+
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/yiyexianchen/javascript3">学习笔记2016/04/25-27</a> is maintained by <a href="https://github.com/yiyexianchen">yiyexianchen</a>.</span>
 
