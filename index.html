@@ -94,19 +94,19 @@ alert("找零"+change.toFixed(2));
     var price = parseFloat(prompt("输入单价"));<br>
     var count = parseInt(prompt("输入数量")); 
     var money = parseFloat(prompt("请输入收款金额")); 
-    /<em>2.计算：<br>
-    应收金额：单价</em>数量<br>
-    找零=收款金额 应收金额 <em>/<br>
+    //2.计算：<br>
+    应收金额：单价<em>数量<br>
+    找零=收款金额 应收金额 */<br>
     var pay = price</em>count;<br>
     //如果大于等于500 打八折优惠 
     alert("您的消费金额为"+pay.toFixed(2));<br>
         可以用三目 pay=pay&gt;=500?pay<em>0.8:pay;<br>
         也可以用下面的if<br>
     if(pay&gt;=500){
-        pay = pay</em>0.8;  //pay<em>=0.8 简写 乘等
+        pay = pay</em>0.8;  //pay*=0.8 简写 乘等
         alert("您的实际消费金额为"+pay.toFixed(2));
     }
-        /</em>3.输出：应收金额 找零<br>
+        //3.输出：应收金额 找零<br>
     alert("找零"+(money - pay).toFixed(2));</p>
 
 <p>分钟结构 程序运行过程中可以根据不同的条件，在不同情况下选择执行不同的语句<br>
