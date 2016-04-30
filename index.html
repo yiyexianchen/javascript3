@@ -92,8 +92,8 @@ alert("找零"+change.toFixed(2));
 <p>精简示例：<br>
     //1.请用户输入：单价，数量，收款金额，保存在变量中<br>
     var price = parseFloat(prompt("输入单价"));<br>
-    var count = parseInt(prompt("输入数量")); 
-    var money = parseFloat(prompt("请输入收款金额")); 
+    var count = parseInt(prompt("输入数量"));<br>
+    var money = parseFloat(prompt("请输入收款金额"));<br>
     //2.计算：<br>
     应收金额：单价<em>数量<br>
     找零=收款金额 应收金额 */<br>
@@ -104,10 +104,10 @@ alert("找零"+change.toFixed(2));
         也可以用下面的if<br>
     if(pay&gt;=500){
         pay = pay</em>0.8;  //pay*=0.8 简写 乘等
-        alert("您的实际消费金额为"+pay.toFixed(2));
-    }
+        alert("您的实际消费金额为"+pay.toFixed(2));<br>
+    }<br>
         //3.输出：应收金额 找零<br>
-    alert("找零"+(money - pay).toFixed(2));</p>
+    alert("找零"+(money - pay).toFixed(2));     </p>
 
 <p>分钟结构 程序运行过程中可以根据不同的条件，在不同情况下选择执行不同的语句<br>
 if...        结构：1件事 要么做 要么不做<br>
