@@ -113,6 +113,39 @@ alert("找零"+change.toFixed(2));
 if...        结构：1件事 要么做 要么不做<br>
 if...else... 结构：两件事，二选一执行   </p>
 
+<pre><code>var price = parseFloat(prompt("输入单价"));
+var count = parseInt(prompt("输入数量"));
+var money = parseFloat(prompt("请输入收款金额"));
+var pay = price*count;
+alert("您的消费金额为"+pay.toFixed(2));
+if(pay&gt;=500){
+    pay = pay*0.8;
+    alert("您的实际消费金额为"+pay.toFixed(2));
+}
+if(money&lt;pay){
+    var less=pay-money;
+    alert("您还差"+less);
+
+}else{
+    alert("找零"+(money - pay).toFixed(2));
+}   var price = parseFloat(prompt("输入单价"));
+var count = parseInt(prompt("输入数量"));
+var money = parseFloat(prompt("请输入收款金额"));
+var pay = price*count;
+alert("您的消费金额为"+pay.toFixed(2));
+if(pay&gt;=500){
+    pay = pay*0.8;
+    alert("您的实际消费金额为"+pay.toFixed(2));
+}
+if(money&lt;pay){
+    var less=pay-money;
+    alert("您还差"+less);
+
+}else{
+    alert("找零"+(money - pay).toFixed(2));
+} 
+</code></pre>
+
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/yiyexianchen/javascript3">学习笔记2016/04/25-27-30</a> is maintained by <a href="https://github.com/yiyexianchen">yiyexianchen</a>.</span>
 
