@@ -146,6 +146,23 @@ if(money&lt;pay){
 } 
 </code></pre>
 
+<p>凡是满足不满足都执行的 放在if...slse...之外
+else if  处理多种情况  多选一执行<br>
+语法：
+if（条件1）{
+满足条件1执行的语法
+}slse if（条件2）{
+满足条件2执行的语法
+}slse if（条件3）{
+满足条件3执行的语法
+}slse{
+以上条件都不满足时默认执行的语法
+}</p>
+
+<p>如果前一个条件已经满足，后续else if不再执行！<br>
+下列值默认都会自动转换为flase
+if（0）{ }/if（null）{ }/if（undefind）{ }/if（NaN）{ }/if（“ ”）{ }/if（0.0）{ }/  </p>
+
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/yiyexianchen/javascript3">学习笔记2016/04/25-27-30</a> is maintained by <a href="https://github.com/yiyexianchen">yiyexianchen</a>.</span>
 
