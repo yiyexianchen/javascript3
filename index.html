@@ -162,7 +162,17 @@ if（条件1）{
 <p>如果前一个条件已经满足，后续else if不再执行！<br>
 下列值默认都会自动转换为flase
 if（0）{ }/if（null）{ }/if（undefind）{ }/if（NaN）{ }/if（“ ”）{ }/if（0.0）{ }/<br>
-体重测试：  </p>
+体重测试：<br>
+    var a=parseFloat(prompt("请输入您的身高"));
+    var b=parseFloat(prompt("请输入您的体重"));
+    var result=b/(a*a)
+    if(result&gt;25){
+        alert("你体重超标");
+    }else if(result&lt;20){
+        alert("你体重偏瘦");
+    }else{
+        alert("你体重非常完美");
+    }</p>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/yiyexianchen/javascript3">学习笔记2016/04/25-27-30</a> is maintained by <a href="https://github.com/yiyexianchen">yiyexianchen</a>.</span>
